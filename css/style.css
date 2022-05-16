@@ -1,0 +1,469 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;  
+  font-family: 'Fredoka', sans-serif;
+}
+
+img {
+  display: block;
+}
+
+header {
+  background: #FFAE39;
+  padding: 2rem 4rem;
+}
+
+span {
+  display: block;
+}
+
+i, strong {
+  display: block;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4rem;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 3.6rem;
+  text-align: center;
+  margin-top: 0;
+}
+
+h4 {
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+nav > img {
+  width: 10%;
+  position: relative;
+  left: 5%;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 1rem;
+  font-size: 1.6rem;
+}
+
+nav li a { 
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+main section > span, .tag, .features > span, .recipes > span, .testimonials section > span {
+  color: #FFAE39;
+  font-size: 1.8rem;
+}
+
+main section > img {
+  width: 100%;
+  height: 100%;
+}
+
+main p {
+  width: 60%;
+  font-size: 1.4rem;
+  line-height: 2.3rem;
+}
+
+main ul li a {
+  color: black;
+}
+
+main ul li {
+  -webkit-box-shadow: 5px 5px 18px 2px rgba(0,0,0,0.1); 
+  box-shadow: 5px 5px 18px 2px rgba(0,0,0,0.1);
+}
+
+main section:first-child {
+  padding: 2rem;
+}   
+
+
+main section > a {
+  display: block;
+  width: max-content;
+  padding: 1rem;
+  border-radius: 14px;
+  background: #FFAE39;
+  font-size: 1.5rem;
+  color: white;
+  margin: 3rem 0;
+  -webkit-box-shadow: 7px 6px 10px 1px rgba(0,0,0,0.31); 
+  box-shadow: 7px 6px 10px 1px rgba(0,0,0,0.31);
+}
+
+main section > a:hover, .aboutUs a:hover {
+  background: white;
+  color: #FFAE39;
+}
+
+
+main ul li:hover {
+  background-color: #FFAE39;
+  cursor: pointer;
+
+}
+
+.aboutUs p {
+  width: 80%;
+  font-size: 1.6rem;
+}
+
+.aboutUs a {
+  display: block;
+  width: max-content;
+  padding: 1rem;
+  border-radius: 14px;
+  background: #FFAE39;
+  font-size: 1.5rem;
+  color: white;
+  margin: 3rem 0;
+  -webkit-box-shadow: 7px 6px 10px 1px rgba(0,0,0,0.31); 
+  box-shadow: 7px 6px 10px 1px rgba(0,0,0,0.31);
+}
+
+
+.aboutUs img {
+  width: 100%;
+}
+
+.features {
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 43%, rgba(255,174,57,0.4962359943977591) 84%, rgba(255,174,57,0.8323704481792717) 95%);
+  padding: 20rem 3rem;
+}
+
+.features span, .recipes > span, .testimonials section > span {
+  text-align: center;
+  
+}
+
+.recipes {
+  padding: 6rem 0;
+}
+
+.recipes section > section {
+  width: 20%;
+  text-align: center;
+  padding: 4rem 1rem;
+  border-radius: 8px;
+  background: rgb(245, 245, 245);
+  -webkit-box-shadow: 5px 5px 16px 2px rgba(0,0,0,0.24); 
+  box-shadow: 5px 5px 16px 2px rgba(0,0,0,0.24);
+}
+
+.recipes section > section:hover {
+  position: relative;
+  bottom: 16px;
+  cursor: pointer;
+}
+
+.recipes > section {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 0 1rem;
+}
+
+.recipes img {
+  width: 100%;
+  height: 75%;
+}
+
+.recipes section > section span, .recipes strong {
+  padding: 1.8rem 0;
+  font-size: 1.6rem;
+}
+
+.recipes > a {
+  display: block;
+  width: max-content;
+  padding: 1rem;
+  border-radius: 14px;
+  background: #FFAE39;
+  font-size: 1.5rem;
+  color: white;
+  margin: 3rem 0;
+  -webkit-box-shadow: 7px 6px 10px 1px rgba(0,0,0,0.31); 
+  box-shadow: 7px 6px 10px 1px rgba(0,0,0,0.31);
+  margin: auto;
+  margin-top: 3%;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.testimonials img {
+  max-width: 100%;
+  border-radius: 30% 70% 100% 30% / 30% 30% 70% 70% !important;
+}
+
+.testimonials section:first-child {
+  width: 50%;
+  background: rgb(255,255,255);
+  background: linear-gradient(315deg, rgba(255,255,255,1) 50%, rgba(255,174,57,0.29735644257703087) 73%, rgba(255,174,57,0.6979166666666667) 95%);
+}
+
+.testimonials section + section {
+  width: 25%;
+}
+
+.testimonials section:first-child  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-box-shadow: 5px 5px 16px 2px rgba(0,0,0,0.24); 
+  box-shadow: 5px 5px 16px 2px rgba(0,0,0,0.24);
+  border-radius: 8px;
+}
+
+blockquote {
+  font-size: 1.6rem;
+}
+
+.testimonialName {
+  font-weight: 600;
+  padding: .8rem 0;
+  
+}
+
+.testimonialTitle {
+  font-style: italic;
+  color: rgb(186, 185, 185);
+}
+
+.testimonials section:first-child {
+  padding: 2rem 6rem;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+nav > span, nav > ul {
+  align-self: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 2.2rem;
+}
+
+
+
+main ul li {
+  position: relative;
+  top: 1rem;
+  border-radius: 50%;
+  padding: 1.5rem;
+  margin-right: 1.4rem;
+}
+
+
+
+
+
+.aboutUs {
+  display: flex;
+}
+
+.aboutUs section {
+  width: 50%;
+}
+
+
+
+.aboutUs section + section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 10%;
+}
+
+section.features div {
+  display: flex;
+  justify-content: center;
+  gap: 0 10%;
+}
+
+section.features section {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+}
+
+.features strong, .recipes strong {
+  font-size: 2.2rem;
+}
+
+.features i {
+  font-size: 2rem;
+  padding: 1.4rem;
+}
+
+.features p {
+  font-size: 1.6rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 6rem 0;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+}
+
+
+footer section:first-child a {
+  display: block;
+  padding: .5rem 0;
+}
+
+footer a {
+  font-size: 1.6rem;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.idk {
+  padding: 0 .5rem;
+}
+
+@media all and (max-width: 1055px) {
+
+  .recipes a[href] {
+    display: none;
+  }
+
+  .recipes section section strong{
+    font-size: 1.6rem;
+  }
+
+  .testimonials section + section {
+    display: none;
+  }
+
+  .testimonials {
+    justify-content: center;
+  }
+
+  .testimonials section:first-child {
+    width: 70%;
+  }
+  
+}
+
+
+
+@media all and (max-width: 815px) {
+  nav img, nav ul {
+    display: none;
+  }
+
+  main section + section {
+    display: none;
+  }
+
+  .features div {
+    flex-direction: column;
+  }
+
+  .title {
+    margin: auto;
+  }
+
+  .aboutUs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutUs section + section {
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .aboutUs p {
+    width: 60%;
+  }
+
+  .recipes > section {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem 0;
+    padding: 0;
+
+  }
+
+  .recipes section > section {
+    width: 50%;
+    position: none;
+  }
+
+  .testimonials section:first-child {
+    width: 100%;
+    padding: 2rem 0;
+  }
+}  
+
+ 
+ 
+ 
