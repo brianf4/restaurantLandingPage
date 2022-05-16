@@ -137,7 +137,7 @@ main section > a {
   box-shadow: 7px 6px 10px 1px rgba(0,0,0,0.31);
 }
 
-main section > a:hover, .aboutUs a:hover {
+main section > a:hover, .aboutUs a:hover, .recipes > a:hover {
   background: white;
   color: #FFAE39;
 }
@@ -175,7 +175,10 @@ main ul li:hover {
 .features {
   background: rgb(255,255,255);
   background: linear-gradient(90deg, rgba(255,255,255,1) 43%, rgba(255,174,57,0.4962359943977591) 84%, rgba(255,174,57,0.8323704481792717) 95%);
-  padding: 20rem 3rem;
+  padding: 20rem 6rem;
+  border-top: 4px inset black;
+  border-bottom: 4px inset black;
+
 }
 
 .features span, .recipes > span, .testimonials section > span {
@@ -233,6 +236,8 @@ main ul li:hover {
   margin: auto;
   margin-top: 3%;
 }
+
+
 
 .testimonials {
   display: flex;
@@ -356,7 +361,7 @@ section.features section {
 }
 
 .features p {
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 footer {
@@ -378,6 +383,10 @@ footer section:first-child a {
 
 footer a {
   font-size: 1.6rem;
+}
+
+footer ul li {
+  text-align: center;
 }
 /******************************************
 /* ADDITIONAL STYLES
@@ -417,8 +426,30 @@ footer a {
     display: none;
   }
 
+  main {
+    width: 80%;
+    margin: auto;
+  }
+
+  main p {
+    width: 100%;
+    font-size: 1.8rem;
+  }
+
   main section + section {
     display: none;
+  }
+
+  main ul {
+    width: max-content;
+    margin: auto;
+  }
+
+  main section > a{
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .features div {
